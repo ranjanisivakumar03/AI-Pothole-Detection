@@ -37,7 +37,7 @@ if uploaded_file is not None:
 
             results = model.predict(
                 image,
-                conf=0.40
+                conf=0.15
             )
 
         result_image = results[0].plot()
