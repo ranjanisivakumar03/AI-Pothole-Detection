@@ -1,5 +1,7 @@
 # AI Pothole Detection
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-pothole-detection-jvqrcfnmcufpzz2dwikzbp.streamlit.app)
 
+**Live Demo:** [Click Here to Open App](https://ai-pothole-detection-jvqrcfnmcufpzz2dwikzbp.streamlit.app)
 An AI-based pothole detection system using computer vision to identify and detect potholes from road images.
 
 ## Features
