@@ -23,7 +23,7 @@ uploaded_file = st.file_uploader(
     "Upload a road image",
     type=["jpg", "jpeg", "png"]
 )
-
+conf_threshold = st.slider("Select Confidence Threshold", min_value=0.05, max_value=1.0, value=0.15, step=0.05)
 if uploaded_file is not None:
 
     image = Image.open(uploaded_file)
@@ -37,7 +37,7 @@ if uploaded_file is not None:
 
             results = model.predict(
                 image,
-                conf=0.15
+                conf=conf_threshold
             )
 
         result_image = results[0].plot()
